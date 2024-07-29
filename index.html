@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud_App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+       <img src="logo.jpg" alt="Logo" class="logo">
+       <h1 class="crud_title">REGISTRO DE INGRESO DE PERSONAL</h1>
+    </header>
+    <main class="container">
+        <section class="crud">
+            <!-- Formulario para ingresar datos -->
+            <form id="formRegister" class="crud_form">
+                <input type="text" placeholder="Nombre Completo" id="nameinput" class="form_input">
+                <input type="date" id="fechainput" class="form_input" readonly>
+                <input type="time" id="horainput" class="form_input" readonly>
+                <button type="submit" id="submitbutton" class="button button--primary"><span>Agregar</span></button>
+            </form>
+            <!-- Tabla para visualizar los datos -->
+            <table class="crudtable">
+                <thead>
+                    <tr>
+                        <th class="table_header">Nombre Completo</th>
+                        <th class="table_header">Fecha</th>
+                        <th class="table_header">Hora</th>
+                        <th class="table_header">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody" class="table_body">
+                </tbody>
+            </table>
+            <!-- Botón para eliminar registros del día -->
+            <button id="deleteTodayButton" class="button button--danger" disabled>Eliminar Registros del Día</button>
+            <!-- Mensaje cuando no hay registros del día -->
+            <p id="noRecordsMessage" style="display: none;">No hay registros del día</p>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
