@@ -73,7 +73,25 @@ A continuación se presenta una imagen de la representación de la CRUD-APP:
 
 ## Tecnologías Empleadas
 
-...
+La aplicación de Registro de Ingreso de Personal ha sido desarrollada utilizando una combinación de tecnologías y herramientas modernas para garantizar una interfaz de usuario atractiva y funcional, así como un desarrollo eficiente. A continuación se detallan las principales tecnologías y herramientas empleadas:
+
+**HTML5:** Utilizado para la estructuración del contenido, buscando el estándar que incorpora las últimas tendencias de maquetación. Proporciona la base semántica para todos los elementos de la aplicación. ![HTML5](https://img.shields.io/badge/HTML5-000000?style=flat-square&logo=html5&logoColor=E34F26)
+
+
+**CSS3:** Utilizado para agregar estilos y diseño visual a la aplicación. Con CSS3 se puede hacer que la aplicación se vea bien en cualquier dispositivo, ya sea una computadora, tableta o teléfono móvil, ajustando automáticamente el diseño para diferentes tamaños de pantalla. ![CSS3](https://img.shields.io/badge/CSS3-000000?style=flat-square&logo=css3&logoColor=1572B6)
+
+
+**JavaScript:** Añadido para la interactividad y funcionalidades dinámicas que facilitan la interacción del usuario. JavaScript se utiliza para manejar eventos como la adición de registros, la eliminación de registros y la actualización dinámica de la tabla. ![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=flat-square&logo=javascript&logoColor=F7DF1E)
+
+
+Herramientas de Desarrollo:
+
+**Visual Studio Code:** El entorno de desarrollo integrado (IDE) utilizado para escribir y organizar el código. ![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-000000?style=flat-square&logo=visual-studio-code&logoColor=007ACC)
+
+**Git:** Utilizado para el control de versiones, permitiendo un seguimiento preciso de los cambios en el código y facilitando la colaboración entre desarrolladores. ![Git](https://img.shields.io/badge/Git-000000?style=flat-square&logo=git&logoColor=F05032)
+
+
+Estas tecnologías y herramientas han sido seleccionadas por su capacidad para crear aplicaciones web modernas, eficientes y de fácil mantenimiento, garantizando una experiencia de usuario óptima y una base sólida para futuras mejoras y escalabilidad.
 
 ## Despliegue
 
