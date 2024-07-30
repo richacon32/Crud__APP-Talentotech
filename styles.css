@@ -8,92 +8,98 @@
     box-sizing: border-box;
 }
 
+body, button, input {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
 .logo {
     width: 100px;
     height: 100px;
-    margin-right: 50px;
-    /* Espacio entre logo y título */
-}
-
-/* todo texto tendrá la fuente Montserrat, botones, entradas de texto, body, etc. */
-body,
-button,
-input {
-    font-family: 'Montserrat', sans-serif;
+    margin-right: 20px;
 }
 
 .crud_title {
     font-size: 30px;
     font-weight: 700;
-    /* Negrita */
     color: black;
-    /* Color negro */
+    text-align: center;
 }
 
-/* La clase container estará centrada, que es el contenedor "padre" de todo el formulario */
 .container {
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 20px;
 }
 
 .crud_form {
-    text-align: center;
     display: flex;
-    margin: 10px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
 }
 
-/* Tamaño de fuente de las entradas a 1rem unidad relativa, equivale al tamaño por defecto del navegador, 2rem = 18px * 2  */
 .form_input {
-    text-align: center;
-    flex: 1;
-    padding: 5px;
-    margin-right: 10px;
+    flex: 1 1 200px;
+    padding: 10px;
     font-size: 1rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-/* Estilos al botón "padre" o en general  */
 .button {
-    text-align: center;
-    padding: 5px 10px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* efecto al pasar el mouse sobre el botón, crece 1.2  */
-.button:hover {
-    transform: scale(1.2);
-}
-
-/* Estilos especificos a "botón "primary" pero conserva propiedades del botón general "padre" */
 .button--primary {
     background-color: aquamarine;
+    color: black;
 }
 
-/* Estilos especificos a "botón "secundary" que se crean automaticamente en la celda "acciones" */
 .button--secundary {
     background-color: #ffc107;
+    color: black;
 }
 
-/* Estilos a la tabla del Crud */
+.button--danger {
+    background-color: #007bff; /* Azul */
+    color: white;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.button--danger:disabled {
+    background-color: #007bff;
+    cursor: not-allowed;
+}
+
 .crudtable {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.table_header,
-.table_body td {
+.table_header, .table_body td {
     border: 1px solid #cccccc;
-    padding: 5px;
+    padding: 10px;
+    text-align: center;
 }
 
 .table_header {
@@ -101,36 +107,47 @@ input {
     font-weight: bold;
 }
 
-/* Estilos para el tercer elemento de la tablebody lo que serán los botones de la celda "acciones" */
 .table_body td:nth-child(4) {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-/* Estilos específicos para botón de eliminar registros del día */
-.button--danger {
-    background-color: aquamarine;
-    /* Azul */
-    color: black;
-    margin-top: 10px;
-    /* Espacio superior para separar del último registro */
-    display: block;
-    width: 100%;
-    /* Abarca todo el ancho disponible */
-    text-align: center;
-    padding: 10px;
-}
-
-/* Estilos para el botón deshabilitado */
-.button--danger:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-}
-
-/* Estilos para el mensaje de no hay registros del día */
 #noRecordsMessage {
-    color: red;
     text-align: center;
-    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Media queries para responsive design */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin: 0 auto 10px auto;
+    }
+
+    .crud_title {
+        font-size: 1.5rem;
+        margin: 10px 0;
+    }
+
+    .form_input {
+        flex: 1 1 100%;
+        margin-right: 0;
+    }
+
+    .button {
+        flex: 1 1 100%;
+    }
+
+    .button--danger {
+        width: 100%;
+    }
+
+    .crud_form {
+        gap: 5px;
+    }
 }
