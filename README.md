@@ -97,16 +97,7 @@ Estas tecnologías y herramientas han sido seleccionadas por su capacidad para c
 
 La CRUD APP es una aplicación web que permite realizar operaciones básicas de creación, lectura, actualización y eliminación de datos. Para desplegar la aplicación en un entorno de producción, sigue estos pasos:
 
-Clonar el Repositorio: Descarga una copia local del repositorio usando git clone <URL del repositorio>.
+**Clonar el Repositorio:** Descarga una copia local del repositorio usando git clone <URL [del repositorio](https://github.com/richacon32/Crud__APP-Talentotech.git)>.
 
-Instalar Dependencias: Navega al directorio del proyecto y ejecuta npm install (o el comando equivalente si usas otro gestor de paquetes) para instalar las dependencias necesarias.
-
-Configuración del Entorno: Asegúrate de tener un archivo .env configurado con las variables de entorno requeridas, como las credenciales de la base de datos y otras configuraciones específicas.
-
-Compilación: Si estás usando herramientas de construcción, ejecuta npm run build para compilar el código fuente y generar los archivos listos para producción.
-
-Despliegue en un Servidor: Sube los archivos generados al servidor de tu elección. Puedes usar servicios como Heroku, Vercel, Netlify, o cualquier otro proveedor que soporte la tecnología de tu aplicación.
-
-Iniciar el Servidor: Configura el servidor para que apunte al archivo de inicio de tu aplicación. Asegúrate de que todos los servicios y puertos necesarios estén configurados y funcionando correctamente.
-
-Verificación: Accede a la URL de tu aplicación desplegada y verifica que todas las funcionalidades (crear, leer, actualizar, eliminar) estén operativas.
+**Despliegue en un Servidor:** Subida 
+[CRUD APP] (https://crudapptech.netlify.app/)
