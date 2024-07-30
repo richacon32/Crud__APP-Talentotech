@@ -100,4 +100,4 @@ La CRUD APP es una aplicación web que permite realizar operaciones básicas de 
 **Clonar el Repositorio:** Descarga una copia local del repositorio usando git clone <URL [del repositorio](https://github.com/richacon32/Crud__APP-Talentotech.git)>.
 
 **Despliegue en un Servidor:** Subida 
-[CRUD APP] (https://crudapptech.netlify.app/)
+[CRUD APP](https://crudapptech.netlify.app/)
